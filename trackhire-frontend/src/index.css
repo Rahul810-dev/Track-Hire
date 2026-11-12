@@ -1,0 +1,25 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+body {
+  font-family: 'DM Sans', sans-serif;
+}
+.font-display {
+  font-family: 'Syne', sans-serif;
+}
+
+html, body {
+  background-color: #F3F1FB;
+}
+
+html.dark, html.dark body {
+  background-color: #111827;
+}
+
+.page-fade {
+  animation: fadeIn 0.25s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
